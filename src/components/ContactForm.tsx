@@ -2,14 +2,13 @@ import { FormEvent, useCallback, useState } from "react";
 
 import { Box, Button, Stack, TextField, Typography, Paper, Alert } from "@mui/material";
 
-import { observer } from "mobx-react-lite";
 import { useStore } from "../stores/RootStoreContext";
 
 import { useContactForm } from '../hooks/useContactForm';
 
 import ContactDialog from "./ContactDialog";
 
-const ContactForm: React.FC = observer(() => {
+const ContactForm: React.FC = () => {
   const { contactsStore } = useStore();
 
   const { contact: newContact, setContact, error, handleEditChange, validateFields } = useContactForm({
@@ -158,6 +157,6 @@ const ContactForm: React.FC = observer(() => {
       />
     </Paper>
   );
-});
+};
 
 export default ContactForm;
