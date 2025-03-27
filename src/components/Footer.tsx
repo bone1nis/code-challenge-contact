@@ -1,4 +1,5 @@
 import { Typography, AppBar, Toolbar, Box } from "@mui/material";
+
 import theme from "../theme";
 
 const Footer: React.FC = () => {

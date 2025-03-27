@@ -1,4 +1,5 @@
 import { makeAutoObservable } from "mobx";
+
 import { Contact } from "../types";
 
 export class ContactsStore {
